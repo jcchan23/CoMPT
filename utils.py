@@ -444,8 +444,8 @@ def get_options(dataset_name):
             'd_model': 256,                         # hidden layer
             'N': 8,                                 # Encoder layers, 10 for 1H best
             'h': 8,                                 # Multi-attention heads
-            'N_dense': 1,                           # PositionWiseFeedForward layers
-            'n_generator_layers': 3,                # Generator layers
+            'N_dense': 2,                           # PositionWiseFeedForward layers
+            'n_generator_layers': 4,                # Generator layers
             'n_output': 1,
             'leaky_relu_slope': 0.1,
             'dense_output_nonlinearity': 'mish',

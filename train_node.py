@@ -8,7 +8,7 @@ from torch.utils.data import DataLoader
 from sklearn import metrics
 from sklearn.model_selection import train_test_split
 from dataset_node import construct_dataset, mol_collate_func
-from transformer_graph import make_model
+from transformer_node import make_model
 from utils import ScheduledOptim, get_options
 
 
