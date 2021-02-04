@@ -228,31 +228,6 @@ if __name__ == '__main__':
                                                                   include_chirality=False, ramdom_state=args.seed + idx)
             train_dataset, valid_dataset, test_dataset = dataset[train_index], dataset[valid_index], dataset[test_index]
 
-            # # store the dataset
-            # train_smiles, train_labels = [], []
-            # for i in range(len(train_dataset)):
-            #     train_smiles.append(train_dataset[i].smile)
-            #     train_labels.append(train_dataset[i].label)
-            # train_labels = np.array(train_labels)
-            # train_data = pd.DataFrame({'smiles': train_smiles, 'FDA_APPROVED': train_labels[:, 0], 'CT_TOX':train_labels[:, 1]})
-            # train_data.to_csv(f'./Result/{args.dataset}/prepared_train_data_{idx + 1}.csv', sep=',', index=None)
-            #
-            # valid_smiles, valid_labels = [], []
-            # for i in range(len(valid_dataset)):
-            #     valid_smiles.append(valid_dataset[i].smile)
-            #     valid_labels.append(valid_dataset[i].label)
-            # valid_labels = np.array(valid_labels)
-            # valid_data = pd.DataFrame({'smiles': valid_smiles, 'FDA_APPROVED': valid_labels[:, 0], 'CT_TOX':valid_labels[:, 1]})
-            # valid_data.to_csv(f'./Result/{args.dataset}/prepared_valid_data_{idx + 1}.csv', sep=',', index=None)
-            #
-            # test_smiles, test_labels = [], []
-            # for i in range(len(test_dataset)):
-            #     test_smiles.append(test_dataset[i].smile)
-            #     test_labels.append(test_dataset[i].label)
-            # test_labels = np.array(test_labels)
-            # test_data = pd.DataFrame({'smiles': test_smiles, 'FDA_APPROVED': test_labels[:, 0], 'CT_TOX':test_labels[:, 1]})
-            # test_data.to_csv(f'./Result/{args.dataset}/prepared_test_data_{idx + 1}.csv', sep=',', index=None)
-
             # calculate total warmup steps
             train_params['total_warmup_steps'] = \
                 int(len(train_dataset) / train_params['batch_size']) * train_params['total_warmup_epochs']
