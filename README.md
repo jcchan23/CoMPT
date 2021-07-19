@@ -1,6 +1,6 @@
 # CoMPT
 
-Source code for our IJCAI 2021 paper: [Learning Attributed Graph Representation with Communicative Message Passing Transformer](#)
+Source code for our IJCAI 2021 paper [Learning Attributed Graph Representation with Communicative Message Passing Transformer](#)
 
 The code was built based on [Molecule Attention Transformer](https://github.com/ardigen/MAT) and [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html). Thanks a lot for their code sharing!
 
