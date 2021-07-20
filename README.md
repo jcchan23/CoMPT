@@ -68,5 +68,13 @@ All hyperparameters can be tuned in the `utils.py`
 ## Citation
 
 Please cite the following paper if you use this code in your work.
-
-[#1771 Learning Attributed Graph Representation with Communicative Message Passing Transformer](https://ijcai-21.org/program-main-track/)
+```bibtex
+@misc{chen2021learning,
+      title={Learning Attributed Graph Representations with Communicative Message Passing Transformer}, 
+      author={Jianwen Chen and Shuangjia Zheng and Ying Song and Jiahua Rao and Yuedong Yang},
+      year={2021},
+      eprint={2107.08773},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
