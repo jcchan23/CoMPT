@@ -4,6 +4,9 @@ Source code for our IJCAI 2021 paper [Learning Attributed Graph Representation w
 
 The code was built based on [Molecule Attention Transformer](https://github.com/ardigen/MAT) and [The Annotated Transformer](https://nlp.seas.harvard.edu/2018/04/03/attention.html). Thanks a lot for their code sharing!
 
+## Update(2022-03-19)
+We have reimplemented the [CoMPT](https://github.com/jcchan23/SAIL/tree/main/Repeat/CoMPT) model by using pytorch, which have been finished all todo step in this readme, please consider this code firstly, thank you for your attention to our work!
+
 ## Dependencies
 
 + cuda >= 9.0
@@ -58,12 +61,11 @@ All hyperparameters can be tuned in the `utils.py`
 
 ## Todo
 
-- [ ] Clean the unuse function and write more comments.
-- [ ] Replace the unnoticed Chinese comments in English.
-- [ ] Generate the split-fold files in `.csv` format, rewrite the code and then make a bash script to train all folds in parallel.
-- [ ] Make a suitable padding way to adapt the molecules with more than 100 atoms, which will be used in the protein (long period).
-- [ ] Try our best to reduce the training time and the using memory, especially for the large dataset (long period).
-
+- [x] Clean the unuse function and write more comments.
+- [x] Replace the unnoticed Chinese comments in English.
+- [x] Generate the split-fold files in `.csv` format, rewrite the code and then make a bash script to train all folds in parallel.
+- [x] Make a suitable padding way to adapt the molecules with more than 100 atoms, which will be used in the protein (long period).
+- [x] Try our best to reduce the training time and the using memory, especially for the large dataset (long period).
 
 ## Citation
 
